@@ -122,11 +122,11 @@ USE_TZ = True
 STATIC_URL = 'static/'
 
 #added manually
-STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
-STATIC_ROOT = os.path.join(BASE_DIR,'imgdatas/pics','static')
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'staticfiles')]
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
   
-MEDIA_URL = '/imgdatas/pics/'
-MEDIA_ROOT = os.path.join(BASE_DIR, 'imgdata/pics')
+MEDIA_URL = '/imgdatas/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'imgdata')
 
 
 

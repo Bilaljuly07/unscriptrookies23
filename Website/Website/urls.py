@@ -24,8 +24,6 @@ from django.views.static import serve
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('unscript_rookies_website.urls')),
-    path('imgdatas/pics/(?P<path>.*)$', serve,{'document_root': settings.MEDIA_ROOT}),
-    path('static/(?P<path>.*)$', serve,{'document_root': settings.STATIC_ROOT}),
 ]
 
 
